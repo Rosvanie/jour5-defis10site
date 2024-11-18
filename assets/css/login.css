@@ -1,0 +1,236 @@
+@import url('reset.css');
+@import url('style.css');
+
+
+
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0 50px ;
+  }
+  
+  main.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .login-image {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+  
+  .login-form {
+    flex: 1;
+    max-width: 50%;
+    background-color: white;
+    padding: 40px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #c0392b;
+  }
+  
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Conteneur principal pour la page d'inscription */
+.register-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Section de l'image */
+  .register-image {
+    flex: 1;
+    max-width: 40%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .register-image img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Section d'informations */
+  .register-info {
+    flex: 1;
+    max-width: 30%;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .register-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .register-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .register-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .register-info strong {
+    color: var(--accent-color);
+  }
+  
+  /* Formulaire d'inscription */
+  .registration-form {
+    flex: 1;
+    max-width: 30%;
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .registration-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .register-container {
+      flex-direction: column;
+    }
+  
+    .register-image,
+    .register-info,
+    .registration-form {
+      max-width: 100%;
+    }
+  }
+  

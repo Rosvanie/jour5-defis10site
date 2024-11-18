@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #6A5ACD;  /* Violet */
+    --secondary-color: #F1C6C6;  /* Rose poudré */
+    --accent-color: #FF6F61;  /* Corail */
+    --link-color: #E6E6FA;  /* Lavande */
+    --main-text-color: #4A4A4A;  /* Gris anthracite */
+    --secondary-text-color: #7F7F7F;  /* Gris moyen */
+    --background-color: #F9F9F9;  /* Couleur de fond */
+    --card-background-color: #FFFFFF;  /* Fond des cartes de produits */
+    --border-color: #D3D3D3;  /* Bordure */
+    --button-background-color: #000000;  /* Noir pour les boutons */
+    --button-hover-color: #444444;  /* Hover des boutons */
+}
+
+
+
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #F5F5F5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: var(--main-text-color); /* Rose poudré */
+}
+
+nav .active{
+    background: var(--secondary-color);
+    color: var(--button-background-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 800;
+    padding: 10px 15px;
+    background: var(--button-background-color);
+    border-radius: 20px;
+    display: none;
+}
+
+.btn1 a{
+    display: block;
+}
+
+
+
+
+/* Responsive Styles */
+
+/* Tablettes et téléphones (moins de 768px) */
+@media (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Empile le logo et le menu */
+        align-items: center;
+        padding: 20px;
+        gap: 10px; /* Espacement entre logo et nav */
+    }
+
+    header .logo {
+        font-size: 18px; /* Taille du logo adaptée */
+        text-align: center; /* Centrer le texte du logo */
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px; /* Espacement entre les liens */
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Taille de texte adaptée */
+        text-decoration: none;
+        color: var(--main-text-color);
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--secondary-color);
+        color: var(--button-background-color);
+    }
+
+    nav .active {
+        background-color: var(--secondary-color);
+        color: var(--button-background-color);
+        font-weight: bold;
+    }
+    .btn a{
+        font-size: .5rem;
+        display: block;
+    }
+    .btn1{
+        display: none;
+    }
+
+}
+
+/* Smartphones petits (moins de 575px) */
+@media (max-width: 575px) {
+    header .logo {
+        font-size: 16px; /* Réduction supplémentaire pour les petits écrans */
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav ul {
+        gap: 8px; /* Espacement réduit pour optimiser la place */
+    }
+}

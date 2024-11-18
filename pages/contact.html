@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-commerce Minimaliste</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">Minimal Shop</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+                <li><a href="panier.html" id="panier-link"><i class="fa-solid fa-cart-shopping"></i> (<span id="cart-count">0</span>)</a></li>
+                <li class="btn"><a href="../login/login.html">Connexion</a></li>
+            </ul>
+        </nav>
+        <div class="btn btn1"><a href="../login/login.html">Connexion</a></div>
+    </header>
+
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#">
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Minimal Shop</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

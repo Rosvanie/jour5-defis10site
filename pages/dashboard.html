@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Vendeur</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Tableau de Bord du Vendeur</h1>
+    </header>
+    <main>
+        <!-- Ajout de produit -->
+        <section class="add-product">
+            <h2>Ajouter un Produit</h2>
+            <form id="addProductForm">
+                <div class="form-group">
+                    <label for="productName">Nom du Produit</label>
+                    <input type="text" id="productName" placeholder="Nom du produit" required>
+                </div>
+                <div class="form-group">
+                    <label for="productDescription">Description</label>
+                    <textarea id="productDescription" placeholder="Description du produit" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Prix ($)</label>
+                    <input type="number" id="productPrice" placeholder="Prix" required>
+                </div>
+                <div class="form-group">
+                    <label for="productCategory">Catégorie</label>
+                    <select id="productCategory" required>
+                        <option value="Electronique">Électronique</option>
+                        <option value="Mode">Mode</option>
+                        <option value="Maison">Maison</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productImage">Image</label>
+                    <input type="file" id="productImage" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn">Ajouter le Produit</button>
+            </form>
+        </section>
+
+        <!-- Produits existants -->
+        <section class="seller-products">
+            <h2>Vos Produits</h2>
+            <div id="productsList" class="product-grid">
+                <!-- Produits ajoutés ici -->
+            </div>
+        </section>
+
+        <!-- Statistiques -->
+        <section class="sales-stats">
+            <h2>Statistiques</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total des Ventes</h3>
+                    <p><span id="totalSales">0</span> Produits</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Revenu Total</h3>
+                    <p>$<span id="totalRevenue">0.00</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
